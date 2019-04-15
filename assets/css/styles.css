@@ -1,5 +1,57 @@
+@charset "utf-8";
+
+/*
+	Web Design
+	Prd 1 / Tobey
+	
+	La Porte High School -{ Home Page
+	Author:	Jacob Day
+	Date:	04/15/2019
+	
+	File Name:	index.html
+*/
+
+/* comment */
+
+html {
+	background-color: rgb(61, 138, 216);
+}
+
+a {
+	color: #0074bb;
+	text-decoration: none;
+}
+
+header {
+	height: 90px;
+	width: 100%;
+	background-color: rgb(75, 46, 131);
+	display: block;
+	position: relative;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	color: #3d3d3d;
+	background-color: #fff;
+}
+
+.lp-patch {
+	display: block;
+	background-image: url(assets/png/lp-patch.jpg);
+	position: absolute;
+}
+
+.lp-word {
+	display: block;
+}
+
 footer {
-  color: white;
-  background-color: orange;
-  text-align: center;
+	background-color: orange;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
