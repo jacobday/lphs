@@ -4,11 +4,11 @@
 	Web Design
 	Prd 1 / Tobey
 	
-	La Porte High School -{ Home Page
+	La Porte High School -{ Styling
 	Author:	Jacob Day
 	Date:	04/15/2019
 	
-	File Name:	index.html
+	File Name:	styles.css
 */
 
 /* comment */
@@ -37,14 +37,27 @@ body {
 	background-color: #fff;
 }
 
-.lp-patch {
+.thinstrip .lp-patch {
 	display: block;
-	background-image: url(assets/png/lp-patch.jpg);
 	position: absolute;
+	top: -22px;
+	left: 0;
+	text-indent: -9999px;
+	width: 163px;
+	height: 90px;
+	background: url(assets/img/lp-patch.jpg) no-repeat 0 0  transparent;
+	z-index: 1;
 }
 
 .lp-word {
 	display: block;
+	position: absolute;
+	top: 12px;
+	left: 150px;
+	text-indent: -9999px;
+	width: 330px;
+	height: 24px;
+	background: url(assets/img/lp-word.jpg) no-repeat 0 -431px transparent;
 }
 
 footer {
