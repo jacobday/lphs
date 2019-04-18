@@ -14,7 +14,7 @@
 /* comment */
 
 html {
-	background-color: rgb(61, 138, 216);
+	background-color: #FF6600;
 }
 
 a {
@@ -25,9 +25,20 @@ a {
 header {
 	height: 90px;
 	width: 100%;
-	background-color: rgb(75, 46, 131);
+	background-color: #1F1F1F;
 	display: block;
 	position: relative;
+}
+
+.lp-logo {
+	height: 90%;
+	width: 10%;
+	position: left;
+}
+
+.lp-word {
+	padding-left: 10%;
+	color: white;
 }
 
 body {
@@ -37,19 +48,20 @@ body {
 	background-color: #fff;
 }
 
-.thinstrip .lp-patch {
+/* .thinstrip .lp-logo {
 	display: block;
 	position: absolute;
 	top: -22px;
 	left: 0;
-	text-indent: -9999px;
+	/* text-indent: -9999px; 
 	width: 163px;
 	height: 90px;
-	background: url(assets/img/lp-patch.jpg) no-repeat 0 0  transparent;
+	/* background: url(assets/img/lp-patch.jpg) no-repeat 0 0  transparent;
 	z-index: 1;
 }
+*/
 
-.lp-word {
+/* .lp-word {
 	display: block;
 	position: absolute;
 	top: 12px;
@@ -59,9 +71,10 @@ body {
 	height: 24px;
 	background: url(assets/img/lp-word.jpg) no-repeat 0 -431px transparent;
 }
+*/
 
 footer {
-	background-color: orange;
+	background-color: #1F1F1F;
 	color: white;
 	font-size: 1em;
 	text-align: center;
