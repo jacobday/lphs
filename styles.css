@@ -31,8 +31,11 @@ header {
 }
 
 .lp-logo {
-	height: 90%;
-	width: 10%;
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
 	position: left;
 }
 
