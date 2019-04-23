@@ -30,19 +30,33 @@ header {
 	position: relative;
 }
 
-.lp-logo {
+/* .lp-logo {
 	display: block;
 	max-height: 100%;
 	max-width: 100%;
 	height: auto;
 	width: auto;
 	position: left;
+	background-image: url("assets/img/lphs-logo.png");
+}
+*/
+
+/* 2 .lp-logo {
+	background: url("assets/img/lphs-logo.png") no-repeat;
+	width: 100px;
+	height: 100px;
+	display: block;
+	text-indent: -9999px;
 }
 
 .lp-word {
+	text-align: center;
+	display: block;
 	padding-left: 10%;
-	color: white;
+	color: orange;
+	float: left;
 }
+*/
 
 body {
 	font-family: "Open Sans", sans-serif;
