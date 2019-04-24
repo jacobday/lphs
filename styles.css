@@ -22,12 +22,20 @@ a {
 	text-decoration: none;
 }
 
-header {
+.header {
 	height: 90px;
 	width: 100%;
 	background-color: #1F1F1F;
 	display: block;
 	position: relative;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
 }
 
 /* .lp-logo {
