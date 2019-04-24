@@ -23,19 +23,50 @@ a {
 }
 
 .header {
-	height: 90px;
-	width: 100%;
 	background-color: #1F1F1F;
-	display: block;
-	position: relative;
-  padding: 20px 10px;
-  overflow: hidden;
+	padding: 20px 10px;
+	overflow: hidden;
 }
 
 .header a {
-  float: left;
-  color: white;
-  text-align: center;
+	float: left;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	transition: color 0.5s ease-out;
+}
+
+.header-right a:after {
+	content: "\002F";
+	padding: 12px;
+	font-size: 1.5em;
+	vertical-align: middle;
+	pointer-events: none;
+}
+
+.header-right a:last-child:after {
+	content: "";
+	padding-right: 0;
+}
+
+.header a.lp-logo {
+	display: block;
+}
+
+.header a:hover {
+	color: orange;
+	text-decoration: underline;
+}
+
+.header a:hover:after {
+	color: white;
+	text-decoration: none;
+}
+
+.header-right {
+	float: right;
 }
 
 /* .lp-logo {
