@@ -28,7 +28,7 @@ a {
 	overflow: hidden;
 }
 
-.header a {
+.header-right a {
 	float: left;
 	color: white;
 	text-align: center;
@@ -42,8 +42,8 @@ a {
 	content: "\002F";
 	padding: 12px;
 	font-size: 1.5em;
+	font-weight: lighter;
 	vertical-align: middle;
-	pointer-events: none;
 }
 
 .header-right a:last-child:after {
@@ -51,13 +51,17 @@ a {
 	padding-right: 0;
 }
 
-.header a.lp-logo {
+/* .header a.lp-logo {
+	float: left;
 	display: block;
+	background-image: url("assets/img/lphs-logo.png");
+	background-color: white;
 }
 
-.header a:hover {
-	color: orange;
-	text-decoration: underline;
+*/
+
+.header-right a:hover {
+	color: #FF6600;
 }
 
 .header a:hover:after {
@@ -69,6 +73,36 @@ a {
 	float: right;
 }
 
+.container {
+	position: relative;
+	width: 50%;
+}
+
+.container img {
+	display: block;
+	max-width: 230px;
+	max-height: 95px;
+	width: auto;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #FF6600;
+}
+
+.container:hover .overlay {
+	opacity: 0.5;
+}
+
 /* .lp-logo {
 	display: block;
 	max-height: 100%;
@@ -76,8 +110,8 @@ a {
 	height: auto;
 	width: auto;
 	position: left;
-	background-image: url("assets/img/lphs-logo.png");
 }
+
 */
 
 /* 2 .lp-logo {
