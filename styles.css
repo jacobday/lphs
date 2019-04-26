@@ -75,7 +75,7 @@ a {
 
 .container {
 	position: relative;
-	width: 50%;
+	width: auto;
 }
 
 .container img {
@@ -101,6 +101,61 @@ a {
 
 .container:hover .overlay {
 	opacity: 0.5;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	list-style-type: none;
+}
+
+li {
+	float: left;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: #1F1F1F;
+	text-align: center;
+	font-size: 2em;
+	padding: 14px 16px;
+	transition: color 0.5s ease-out;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	color: #ff6600;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.about-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.about-content a {
+	color: black;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+	font-size: 1.2em;
+	transition: color 0.5s ease-out;
+}
+
+.about-content a:hover {
+	background-color: #1F1F1F;
+	color: gray;
+}
+
+.dropdown:hover .about-content {
+	display: block;
 }
 
 /* .lp-logo {
