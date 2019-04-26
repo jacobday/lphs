@@ -44,6 +44,8 @@ a {
 	font-size: 1.5em;
 	font-weight: lighter;
 	vertical-align: middle;
+  transition: none;
+  color: white;
 }
 
 .header-right a:last-child:after {
@@ -132,7 +134,7 @@ li.dropdown {
 	display: inline-block;
 }
 
-.about-content {
+.drop-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
@@ -140,21 +142,21 @@ li.dropdown {
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.about-content a {
+.drop-content a {
 	color: black;
 	padding: 12px 16px;
 	display: block;
 	text-align: left;
 	font-size: 1.2em;
-	transition: color 0.5s ease-out;
+	transition: 0.5s ease-out;
 }
 
-.about-content a:hover {
+.drop-content a:hover {
 	background-color: #1F1F1F;
 	color: gray;
 }
 
-.dropdown:hover .about-content {
+.dropdown:hover .drop-content {
 	display: block;
 }
 
