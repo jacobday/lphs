@@ -11,16 +11,38 @@
 	File Name:	styles.css
 */
 
-/* comment */
+
+/* Basic Styling */
 
 html {
 	background-color: #FF6600;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	color: #3d3d3d;
+	background-color: #ffdb99;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/* Element Styling */
+
+* {
+  box-sizing: border-box;
 }
 
 a {
 	color: #0074bb;
 	text-decoration: none;
 }
+
+
+/* Header Styling */
 
 .header {
 	background-color: #1F1F1F;
@@ -40,7 +62,7 @@ a {
 
 .header-right a:after {
 	content: "\002F";
-	padding: 12px;
+	padding: 0 12px;
 	font-size: 1.5em;
 	font-weight: lighter;
 	vertical-align: middle;
@@ -105,7 +127,10 @@ a {
 	opacity: 0.5;
 }
 
-ul {
+
+/* Top Navigation Styling */
+
+.topnav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -113,11 +138,11 @@ ul {
 	list-style-type: none;
 }
 
-li {
+.topnav li {
 	float: left;
 }
 
-li a, .dropbtn {
+.dropbtn {
 	display: inline-block;
 	color: #1F1F1F;
 	text-align: center;
@@ -126,7 +151,7 @@ li a, .dropbtn {
 	transition: color 0.5s ease-out;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.dropbtn:hover, .dropdown:hover {
 	color: #ff6600;
 }
 
@@ -139,7 +164,7 @@ li.dropdown {
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .drop-content a {
@@ -158,6 +183,7 @@ li.dropdown {
 
 .dropdown:hover .drop-content {
 	display: block;
+  z-index: 1;
 }
 
 /* .lp-logo {
@@ -188,17 +214,19 @@ li.dropdown {
 }
 */
 
-body {
-	font-family: "Open Sans", sans-serif;
-	font-size: 17px;
-	color: #3d3d3d;
-	background-color: #fff;
-}
+
+
+/* Recent Updates Slideshow Styling */
 
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  background-color: white;
+}
+
+.recent-slides {
+  display: none;
 }
 
 .text {
@@ -217,6 +245,11 @@ body {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 5px;
 }
 
 .dot {
@@ -251,6 +284,314 @@ body {
 }
 
 
+/* Navigation Bar Styling */
+
+.navbar {
+  padding-top: 5px;
+}
+
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	list-style-type: none;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.bartext {
+  color: #1f1f1f;
+  font-size: 1em;
+  padding-top: 7px;
+}
+
+.baricon {
+  color: #d0d0d0;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover .baricon {
+  color: #1f1f1f;
+  transform: scale(1.15);
+}
+
+
+/* News & Events Card Styling */
+
+
+.news {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.news-row #header {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.news-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+.news-row {
+  margin: (0, -5px);
+}
+
+.news-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.news-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+}
+
+
+/* Card Styling */
+
+.card-img {
+  width: 100%;
+  height: 20%;
+}
+
+.card-topic {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.card-title {
+  font-size: 1em;
+}
+
+.card-text {
+  font-size: 0.8em;
+}
+
+.card-link {
+  padding: 16px 0;
+  display: table;
+}
+
+.card-link #text {
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.card-link #text:hover {
+  background-color: gray;
+}
+
+
+/* Facts Table Styling */
+
+.facts {
+  background-color: black;
+}
+
+.facts-row > #header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  display: table;
+  background-color: #1f1f1f;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+}
+
+.facts-column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.facts-row {
+  margin: (0, -5px);
+  background-color: white;
+}
+
+.facts-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-column {
+  float: left;
+  width: 50%;
+  padding: 10px 2px;
+}
+
+
+/* Facts Styling */
+
+.facts-container > #header {
+  text-align: center;
+  color: #1f1f1f;
+  padding: 5px;
+}
+
+.container-column > #icon {
+  font-size: 2em;
+  text-align: right;
+  vertical-align: middle;
+  color: #1f1f1f;
+}
+
+.container-column > #text {
+  text-align: left;
+  color: #1f1f1f;
+}
+
+#text > span {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+
+/* Footer Styling */
+
+.footer {
+	background-color: #1F1F1F;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+  padding: 10px 0;
+}
+
+.footer #school {
+  padding: 10px 0;
+}
+
+.footer #school a {
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+.footer #school a:hover {
+  color: #ff6600
+}
+
+.footer #slogan {
+  padding: 10px 0;
+}
+
+.footer #slogan a {
+  color: white;
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+
+.footer #slogan a:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+hr {
+  margin: 10px 43%;
+  border-style: inset;
+  border-width: 0.5px;
+}
+
+.connect {
+  padding: 10px 0;
+}
+
+.connect #text {
+  padding: 10px 0;
+}
+
+.connect #socials {
+  padding: 10px 0;
+}
+
+.connect #socials a {
+  color: white;
+  font-size: 2em;
+  padding: 0 10px;
+  transition: color 0.5s ease-out;
+}
+
+.connect #socials a:hover {
+  color: #ff6600;
+}
+
+.footer #navigation {
+  padding: 10px 0;
+}
+
+.footer #navigation a {
+  font-size: 0.9em;
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+.footer #navigation a:after {
+  content: "\002F";
+  padding: 0 12px;
+  transition: none;
+  color: white;
+}
+
+.footer #navigation a:last-child:after {
+	content: "";
+	padding-right: 0;
+}
+
+.footer #navigation a:hover {
+	color: #FF6600;
+}
+
+.footer #navigation a:hover:after {
+	color: white;
+	text-decoration: none;
+}
+
+.footer #copyright {
+  font-size: 0.7em;
+  padding: 10px 0;
+}
+
+/*
+.card-link #bar {
+  width: 10%;
+  height: 100%;
+  padding: 0 5px;
+  background-color: orange;
+  float: left;
+}
+
+.card-link #arrow {
+  padding: 0 10px;
+  background-color: black;
+  float: left;
+}
+*/
+
 /* .thinstrip .lp-logo {
 	display: block;
 	position: absolute;
@@ -276,11 +617,5 @@ body {
 }
 */
 
-footer {
-	background-color: #1F1F1F;
-	color: white;
-	font-size: 1em;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
+
+
