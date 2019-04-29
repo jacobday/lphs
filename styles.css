@@ -1,0 +1,728 @@
+@charset "utf-8";
+
+/*
+	Web Design
+	Prd 1 / Tobey
+	
+	La Porte High School -{ Styling
+	Author:	Jacob Day
+	Date:	04/15/2019
+	
+	File Name:	styles.css
+*/
+
+
+/* Basic Styling */
+
+html {
+	background-color: #FF6600;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	color: #3d3d3d;
+	background-color: #ffdb99;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+/* Element Styling */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+	color: #0074bb;
+	text-decoration: none;
+}
+
+
+/* Header Styling */
+
+.header {
+	background-color: #1F1F1F;
+	padding: 20px 10px;
+	overflow: hidden;
+}
+
+.header-right a {
+	float: left;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+	transition: color 0.5s ease-out;
+}
+
+.header-right a:after {
+	content: "\002F";
+	padding: 0 12px;
+	font-size: 1.5em;
+	font-weight: lighter;
+	vertical-align: middle;
+  transition: none;
+  color: white;
+}
+
+.header-right a:last-child:after {
+	content: "";
+	padding-right: 0;
+}
+
+/* .header a.lp-logo {
+	float: left;
+	display: block;
+	background-image: url("assets/img/lphs-logo.png");
+	background-color: white;
+}
+
+*/
+
+.header-right a:hover {
+	color: #FF6600;
+}
+
+.header a:hover:after {
+	color: white;
+	text-decoration: none;
+}
+
+.header-right {
+	float: right;
+}
+
+
+
+.header-left > #image {
+       background: url(../img/lphs-logo.png) no-repeat center;
+  background-size: cover;
+	
+height: 100%;
+}
+
+
+
+
+/* Top Navigation Styling */
+
+.topnav {
+  position: relative;
+  z-index: 1;
+}
+
+.topnav:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 3px rgba(34,25,25,1);
+  z-index: -1;
+}
+
+
+.topnav ul {
+	margin: 0;
+	overflow: hidden;
+	background-color: white;
+	list-style-type: none;
+  width: 100%;
+}
+
+.topnav li {
+	float: left;
+}
+
+.dropbtn {
+	display: inline-block;
+	color: #1F1F1F;
+	text-align: center;
+	font-size: 2em;
+	padding: 14px 16px;
+	transition: color 0.5s ease-out;
+}
+
+.dropbtn:hover, .dropdown:hover {
+	color: #ff6600;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.drop-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop-content a {
+	color: black;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+	font-size: 1.2em;
+	transition: 0.5s ease-out;
+}
+
+.drop-content a:hover {
+	background-color: #1F1F1F;
+	color: gray;
+}
+
+.dropdown:hover .drop-content {
+	display: block;
+  z-index: 1;
+}
+
+/* .lp-logo {
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	position: left;
+}
+
+*/
+
+/* 2 .lp-logo {
+	background: url("assets/img/lphs-logo.png") no-repeat;
+	width: 100px;
+	height: 100px;
+	display: block;
+	text-indent: -9999px;
+}
+
+.lp-word {
+	text-align: center;
+	display: block;
+	padding-left: 10%;
+	color: orange;
+	float: left;
+}
+*/
+
+
+
+/* Recent Updates Slideshow Styling */
+
+.slideshow-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+  background-color: white;
+}
+
+.recent-slides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.recent-slides img {
+  min-width: 100%;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.hashtag-container {
+  position: relative;
+  margin-left: 60px;
+  margin-right: auto;
+}
+
+#hashtag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#hashtag span {
+  display: block;
+  background-color: white;
+  transform: skew(-15deg,0);
+  padding: 2px 5px 3px 15px;
+  margin: 0 10px 0 -10px;
+}
+
+#hashtag span span {
+  transform: skew(15deg,0);
+  color: #1f1f1f;
+  font-style: italic;
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 5px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/* Navigation Bar Styling */
+
+.navbar {
+  padding-top: 5px;
+}
+
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	list-style-type: none;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+	display: inline-block;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.bartext {
+  color: #1f1f1f;
+  font-size: 1em;
+  padding-top: 7px;
+}
+
+.baricon {
+  color: #d0d0d0;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover .baricon {
+  color: #1f1f1f;
+  transform: scale(1.15);
+}
+
+
+/* News & Events Card Styling */
+
+
+.news-container {
+  background: url(../img/parallax.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.news {
+  background-color: rgba(33,33,33,0.8);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/* .parallax {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.parallax img {
+  opacity: 0.9;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+
+.news-row #header {
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.news-column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.news-row {
+  margin: (0, -5px);
+}
+
+.news-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.news-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: left;
+  background-color: #f1f1f1;
+  min-height: 425px;
+}
+
+
+/* Card Styling */
+
+.card-img {
+  width: 100%;
+  height: 20%;
+}
+
+.card-img > img {
+  width: 100%;
+  height: auto;
+}
+
+.card-topic {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: #FF6600;
+}
+
+.card-title {
+  font-size: 1em;
+  color: #1f1f1f;
+  font-weight: 900;
+}
+
+.card-text {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.card-link {
+  padding: 16px 0;
+  display: table;
+}
+
+.card-link #text {
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  transition: all 0.5s ease;
+}
+
+.card-link #text:before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: relative;
+  background-color: #1f1f1f;
+  border-left: 5px solid #FF6600;
+  width: 43px;
+  right: -43px;
+}
+
+.card-link #text:hover {
+  background-color: gray;
+}
+
+
+/* Facts Table Styling */
+
+.facts {
+  background-color: black;
+}
+
+.facts-row > #header {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  display: table;
+  background-color: #1f1f1f;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+}
+
+.facts-column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.facts-row {
+  margin: (0, -5px);
+  background-color: white;
+}
+
+.facts-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-column {
+  float: left;
+  width: 50%;
+  padding: 10px 2px;
+}
+
+
+/* Facts Styling */
+
+.facts-container > #header {
+  text-align: center;
+  color: #1f1f1f;
+  padding: 5px;
+}
+
+.container-column > #icon {
+  font-size: 2em;
+  text-align: right;
+  vertical-align: middle;
+  color: #1f1f1f;
+}
+
+.container-column > #text {
+  text-align: left;
+  color: #1f1f1f;
+}
+
+#text > span {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+
+/* Footer Styling */
+
+.footer-container {
+  background: url(../img/footer.jpeg) no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.footer {
+		color: white;
+	font-size: 1em;
+	text-align: center;
+  padding: 10px 0;
+overflow: hidden;
+background: rgba(31,31,31,0.9);
+  border-top: 5px solid;
+  border-top-color: #FF6600;
+
+}
+
+/*
+.footer #image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+
+}
+
+.footer #image img {
+  position: absolute;
+  background: url(../img/footer.jpeg) no-repeat center;
+  background-size: cover;
+filter: grayscale(100%);
+}
+*/
+
+.footer #school {
+  padding: 10px 0;
+}
+
+.footer #school a {
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+.footer #school a:hover {
+  color: #ff6600
+}
+
+.footer #slogan {
+  padding: 10px 0;
+}
+
+.footer #slogan a {
+  color: white;
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+
+.footer #slogan a:hover {
+  color: white;
+  opacity: 0.5;
+}
+
+hr {
+  margin: 10px 43%;
+  border-style: inset;
+  border-width: 0.5px;
+}
+
+.connect {
+  padding: 10px 0;
+}
+
+.connect #text {
+  padding: 10px 0;
+}
+
+.connect #socials {
+  padding: 10px 0;
+}
+
+.connect #socials a {
+  color: white;
+  font-size: 2em;
+  padding: 0 10px;
+  transition: color 0.5s ease-out;
+}
+
+.connect #socials a:hover {
+  color: #ff6600;
+}
+
+.footer #navigation {
+  padding: 10px 0;
+}
+
+.footer #navigation a {
+  font-size: 0.9em;
+  color: white;
+  transition: color 0.5s ease-out;
+}
+
+.footer #navigation a:after {
+  content: "\002F";
+  padding: 0 12px;
+  transition: none;
+  color: white;
+}
+
+.footer #navigation a:last-child:after {
+	content: "";
+	padding-right: 0;
+}
+
+.footer #navigation a:hover {
+	color: #FF6600;
+}
+
+.footer #navigation a:hover:after {
+	color: white;
+	text-decoration: none;
+}
+
+.footer #copyright {
+  font-size: 0.7em;
+  padding: 10px 0;
+}
+
+/*
+.card-link #bar {
+  width: 10%;
+  height: 100%;
+  padding: 0 5px;
+  background-color: orange;
+  float: left;
+}
+
+.card-link #arrow {
+  padding: 0 10px;
+  background-color: black;
+  float: left;
+}
+*/
+
+/* .thinstrip .lp-logo {
+	display: block;
+	position: absolute;
+	top: -22px;
+	left: 0;
+	/* text-indent: -9999px; 
+	width: 163px;
+	height: 90px;
+	/* background: url(assets/img/lp-patch.jpg) no-repeat 0 0  transparent;
+	z-index: 1;
+}
+*/
+
+/* .lp-word {
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 150px;
+	text-indent: -9999px;
+	width: 330px;
+	height: 24px;
+	background: url(assets/img/lp-word.jpg) no-repeat 0 -431px transparent;
+}
+*/
+
+
+
