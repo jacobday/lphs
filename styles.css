@@ -29,8 +29,6 @@ body {
 }
 
 
-
-
 /* Element Styling */
 
 * {
@@ -76,15 +74,6 @@ a {
 	padding-right: 0;
 }
 
-/* .header a.lp-logo {
-	float: left;
-	display: block;
-	background-image: url("assets/img/lphs-logo.png");
-	background-color: white;
-}
-
-*/
-
 .header-right a:hover {
 	color: #FF6600;
 }
@@ -98,16 +87,12 @@ a {
 	float: right;
 }
 
-
-
 .header-left > #image {
        background: url(../img/lphs-logo.png) no-repeat center;
   background-size: cover;
 	
 height: 100%;
 }
-
-
 
 
 /* Top Navigation Styling */
@@ -127,7 +112,6 @@ height: 100%;
   box-shadow: 0 1px 3px rgba(34,25,25,1);
   z-index: -1;
 }
-
 
 .topnav ul {
 	margin: 0;
@@ -184,35 +168,6 @@ li.dropdown {
 	display: block;
   z-index: 1;
 }
-
-/* .lp-logo {
-	display: block;
-	max-height: 100%;
-	max-width: 100%;
-	height: auto;
-	width: auto;
-	position: left;
-}
-
-*/
-
-/* 2 .lp-logo {
-	background: url("assets/img/lphs-logo.png") no-repeat;
-	width: 100px;
-	height: 100px;
-	display: block;
-	text-indent: -9999px;
-}
-
-.lp-word {
-	text-align: center;
-	display: block;
-	padding-left: 10%;
-	color: orange;
-	float: left;
-}
-*/
-
 
 
 /* Recent Updates Slideshow Styling */
@@ -356,7 +311,6 @@ li.dropdown {
 
 /* News & Events Card Styling */
 
-
 .news-container {
   background: url(../img/parallax.jpg) no-repeat center;
   background-size: cover;
@@ -368,24 +322,6 @@ li.dropdown {
   padding-top: 10px;
   padding-bottom: 30px;
 }
-
-/* .parallax {
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-}
-
-.parallax img {
-  opacity: 0.9;
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-*/
 
 .news-row #header {
   color: white;
@@ -573,23 +509,6 @@ background: rgba(31,31,31,0.9);
 
 }
 
-/*
-.footer #image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  
-
-}
-
-.footer #image img {
-  position: absolute;
-  background: url(../img/footer.jpeg) no-repeat center;
-  background-size: cover;
-filter: grayscale(100%);
-}
-*/
-
 .footer #school {
   padding: 10px 0;
 }
@@ -682,47 +601,3 @@ hr {
   font-size: 0.7em;
   padding: 10px 0;
 }
-
-/*
-.card-link #bar {
-  width: 10%;
-  height: 100%;
-  padding: 0 5px;
-  background-color: orange;
-  float: left;
-}
-
-.card-link #arrow {
-  padding: 0 10px;
-  background-color: black;
-  float: left;
-}
-*/
-
-/* .thinstrip .lp-logo {
-	display: block;
-	position: absolute;
-	top: -22px;
-	left: 0;
-	/* text-indent: -9999px; 
-	width: 163px;
-	height: 90px;
-	/* background: url(assets/img/lp-patch.jpg) no-repeat 0 0  transparent;
-	z-index: 1;
-}
-*/
-
-/* .lp-word {
-	display: block;
-	position: absolute;
-	top: 12px;
-	left: 150px;
-	text-indent: -9999px;
-	width: 330px;
-	height: 24px;
-	background: url(assets/img/lp-word.jpg) no-repeat 0 -431px transparent;
-}
-*/
-
-
-
