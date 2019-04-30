@@ -10,40 +10,19 @@
 	
 	File Name:	styles.css
 */
-/*
-html
-- (1..20).each do |i|
-    %div
 
-body,html {height:100%;overflow:hidden;}
-body {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(to bottom, #6e529d 0%,#d97b93 100%);
-}
-div {
-  border: 1px solid rgba(255,255,255,.1);
-  width: 10em;
-  height: 10em;
-  transform: rotate(45deg);
-  margin: 2em;
-  float: left;
-  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%,rgba(0,0,0,0.05) 100%); 
-}
-*/
 
 /* Basic Styling */
 
 html {
-	background-color: #FF6600;
-}
+	background-color: #a55c1b;
+background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);}
 
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 17px;
 	color: #3d3d3d;
-	background-color: #ffdb99;
+	
   margin: 0;
   padding: 0;
 
@@ -109,27 +88,42 @@ a {
 	float: right;
 }
 
-.header-left > #image {
-       background: url(../img/lphs-logo.png) no-repeat center;
-  background-size: cover;
-	
-height: 100%;
+.header-left img {
+  max-height: 90px;
+  position: fixed;
+  z-index: 3;
+  margin-top: -15px;
+  transition: all 0.2s ease-in-out;
 }
 
+.header-left img:hover {
+  transform: scale(1.10);
+}
+
+.header-left #school {
+  float: left;
+  margin-left: 13%;
+  vertical-align: middle;
+}
 .header-left #school a {
   color: white;
   font-family: "Dancing Script", sans-serif;
   font-size: 1.5em;
+  position: absolute;
 }
 
-
+#a:hover ~ #b { text-align: left; }
 /* Top Navigation Styling */
 
 .topnav {
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(34,25,25,1);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
+/*
 .topnav:before {
   content: "";
   position: absolute;
@@ -140,18 +134,17 @@ height: 100%;
   box-shadow: 0 1px 3px rgba(34,25,25,1);
   z-index: -1;
 }
+*/
 
 .topnav ul {
 	margin: 0;
+  padding: 0;
 	overflow: hidden;
 	background-color: white;
 	list-style-type: none;
   width: 100%;
 }
 
-.topnav li {
-	float: left;
-}
 
 .dropbtn {
 	display: inline-block;
@@ -234,6 +227,7 @@ li.dropdown {
   position: relative;
   margin-left: 60px;
   margin-right: auto;
+  z-index: 1;
 }
 
 #hashtag {
@@ -243,7 +237,7 @@ li.dropdown {
   overflow: hidden;
 }
 
-#hashtag span {
+#hash1 {
   display: block;
   background-color: white;
   transform: skew(-15deg,0);
@@ -251,31 +245,32 @@ li.dropdown {
   margin: 0 10px 0 -10px;
 }
 
-#hashtag span span {
+#hash2 {
   transform: skew(15deg,0);
   color: #1f1f1f;
-  font-style: italic;
+  font-style:;
   font-size: 1.3em;
   font-weight: 900;
 }
 
 .dot-container {
   text-align: center;
-  padding: 5px;
+  transform: skew(15deg,0);
+  margin: 0;
+  height: 1px;
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 30px;
   margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
+  background-color: #2f2f2f;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active {
-  background-color: #717171;
+  background-color: #FF6600;
 }
 
 .fade {
@@ -300,6 +295,7 @@ li.dropdown {
 
 .navbar {
   padding-top: 5px;
+  text-align: center;
 }
 
 .navbar ul {
@@ -311,7 +307,9 @@ li.dropdown {
 }
 
 .navbar li {
-  float: left;
+  display: inline-block;
+  width: 160px;
+  white-space: nowrap;
 }
 
 .navbar a {
@@ -323,12 +321,13 @@ li.dropdown {
 .bartext {
   color: #1f1f1f;
   font-size: 1em;
+  font-weight: 600;
   padding-top: 7px;
 }
 
 .baricon {
   color: #d0d0d0;
-  font-size: 1.5em;
+  font-size: 2em;
   transition: all 0.2s ease-in-out;
 }
 
