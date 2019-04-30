@@ -20,20 +20,30 @@
 	</head>
 	
 	<body>
-
+	<div class="sidenav" id="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="#">About</a>
+					<a href="#">About</a>
+					<a href="#">About</a>
+					<a href="#">About</a>
+	</div>
+	<div id="main">
 
 	<!-- Header -->
 		<div class="header">
 			<div class="header-left">
-          <img id="a" src="assets/img/lphs-logo.png" />
-          <div id="school"><a href="index.html">La Porte High School</a></div>
-      </div>
+				<img id="a" src="assets/img/lphs-logo.png" />
+				<div id="school"><a href="index.html">La Porte High School</a></div>
+			</div>
 
 			<div class="header-right">
 				<a href="#">Students</a>
 				<a href="#">Parents</a>
 				<a href="#">Faculty & Staff</a>
 			</div>
+			
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+			
 		</div>
 		
 		
@@ -326,6 +336,6 @@
 		<script src="assets/jss/slideshow.js"></script>
 		<script src="assets/jss/hover.js"></script>
 
-
+	</div>
 	</body>
 </html>
