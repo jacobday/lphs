@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+		<!--
+			Web Design
+			Prd 1 / Tobey
+			
+			La Porte High School -{ Home Page
+			Author:	Jacob Day
+			Date:	04/15/2019
+			
+			File Name:	index.html
+		-->
+<html>
+	<head>
+		<title>La Porte High School</title>
+		<meta charset="utf-8" />
+		<link href="assets/css/styles.css" rel="stylesheet" />
+		<link href="assets/css/layout.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Dancing+Script" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	</head>
+	
+	<body>
+	<div class="sidenav" id="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="#">About</a>
+					<a href="#">About</a>
+					<a href="#">About</a>
+					<a href="#">About</a>
+	</div>
+	<div id="main">
+
+	<!-- Header -->
+		<div class="header">
+			<div class="header-left">
+				<img id="a" src="assets/img/lphs-logo.png" />
+				<div id="school"><a href="index.html">La Porte High School</a></div>
+			</div>
+
+			<div class="header-right">
+				<a href="#">Students</a>
+				<a href="#">Parents</a>
+				<a href="#">Faculty & Staff</a>
+			</div>
+			
+			<span class="open-sidenav" onclick="openNav()">&#9776;</span>
+			
+		</div>
+		
+		
+	<!-- Top Navigation -->
+		<div class="topnav" id="b">
+			<ul>
+				<li class="dropdown">
+					<a href="http://www.lpcsc.k12.in.us/districtinfo.asp" class="dropbtn">District Info</a>
+					<div class="drop-content">
+						<a href="http://www.lpcsc.k12.in.us/projects/">Projects</a>
+						<a href="http://www.lpcsc.k12.in.us/administration.asp">Administration</a>
+						<a href="http://www.lpcsc.k12.in.us/community.asp">Community</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="http://www.lpcsc.k12.in.us/schools.asp" class="dropbtn">Schools</a>
+					<div class="drop-content">
+						<a href="http://www.lpcsc.k12.in.us/boston/">Boston</a>
+						<a href="http://www.lpcsc.k12.in.us/kesling/">Kesling</a>
+						<a href="index.html">La Porte High School</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="http://www.lpcsc.k12.in.us/departments.asp" class="dropbtn">Departments</a>
+					<div class="drop-content">
+						<a href="http://www.lpcsc.k12.in.us/foodservice/">Food Service</a>
+						<a href="http://www.lpcsc.k12.in.us/technology/">Technology</a>
+						<a href="http://www.lpcsc.k12.in.us/transportation/">Transportation</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="http://www.lpcsc.k12.in.us/elearning/" class="dropbtn">eLearning</a>
+					<div class="drop-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropbtn">Athletics</a>
+					<div class="drop-content">
+						<a href="http://www.lpcsc.k12.in.us/kesling/athletics/">Kesling</a>
+						<a href="https://goslicers.com/">La Porte High School</a>
+						<a href="http://www.lpcsc.k12.in.us/media/">Live Stream</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="http://www.lpcsc.k12.in.us/calendars.asp" class="dropbtn">Calendar</a>
+					<div class="drop-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<a href="https://www.paypal.me/jacobmday" class="dropbtn">Give</a>
+					<div class="drop-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+    
+	<!-- Recent Updates -->
+		<div class="slideshow-container">
+<div class="hashtag-container">
+					<div id="hashtag">
+						<span id="hash1">
+							<span id="hash2">#SlicerExperience</span>
+                                                        
+						</span>
+<div class="dot-container">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+					</div>
+				</div>
+			<!-- Slide 01/03 -->
+			<div class="recent-slides fade">
+				<img src="assets/img/150.jpg">
+				<div class="text">Celebrating 150 Years</div>
+			</div>
+			<!-- Slide 02/03 -->
+			<div class="recent-slides fade">
+				<img src="assets/img/outstanding.jpg">
+				<div class="text">Outstanding Students</div>
+			</div>
+			<!-- Slide 03/03 -->
+			<div class="recent-slides fade">
+				<img src="assets/img/HallOfFame.jpg">
+				<div class="text">Slicer Hall of Fame</div>
+			</div>
+		</div>
+    
+		<!-- Slide Indicator -->
+		
+		
+		
+	<!-- Navigation Bar -->
+		<div class="navbar">
+			<ul>
+				<li>
+					<a href="https://www.lpcsc.k12.in.us/pac/">
+						<div class="baricon"><i class="fas fa-theater-masks"></i></div>
+						<div class="bartext">Performing Arts</div>
+					</a>
+				</li>
+        
+				<li>
+					<a href="https://www.lpcsc.k12.in.us/lphs/guidance/">
+						<div class="baricon"><i class="fas fa-hands-helping"></i></div>
+						<div class="bartext">Guidance</div>
+					</a>
+				</li>
+        
+				<li>
+					<a href="https://slicernewsroom.com/">
+						<div class="baricon"><i class="far fa-newspaper"></i></div>
+						<div class="bartext">Newsroom</div>
+					</a>
+				</li>
+        
+				<li>
+					<a href="https://goslicers.com/">
+						<div class="baricon"><i class="far fa-futbol"></i></div>
+						<div class="bartext">Athletics</div>
+					</a>
+				</li>
+        
+				<li>
+					<a href="#">
+						<div class="baricon"><i class="fas fa-share-alt"></i></div>
+						<div class="bartext">Social</div>
+					</a>
+				</li>
+        
+				<li>
+					<a href="https://www.lpcsc.k12.in.us/lphs/library/">
+						<div class="baricon"><i class="fas fa-book"></i></div>
+						<div class="bartext">Libraries</div>
+					</a>
+				</li>
+        
+				<li>
+					<a href="https://skyward01.lpcsc.k12.in.us/scripts/wsisa.dll/WService=wsEAplus/seplog01.w">
+						<div class="baricon"><i class="fas fa-user-cog"></i></div>
+						<div class="bartext">MyLPHS</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+    
+		
+	<!-- News & Events -->
+		<div class="news-container">
+			<div class="news">
+
+				<div class="news-row">
+					<div id="header">News & Events</div>
+		  
+					<!-- Card 01/03 -->
+					<div class="news-column">
+						<div class="news-card">
+			  
+							<div class="card-img"><img src="assets/img/soccer.jpg" /></div>
+							<div class="card-topic">Athletics</div>
+							<div class="card-title">Physicals</div>
+							<div class="card-text">The La Porte High School athletic department is now scheduling appointments for athletic physicals for the 2019-20 school year for athletes that are presently in grades 8-11. Physicals will be conducted on Thursday, May 9th at La Porte High School at a cost of $20.</div>
+							<div class="card-link">
+								<a href="https://www.signupgenius.com/go/30E0B49ACAD29A2F49-athletic3">
+									<div id="text">Sign Up</div>
+								</a>
+							</div>
+						</div>
+					</div>
+			
+					<!-- Card 02/03 -->
+					<div class="news-column">
+						<div class="news-card">
+			  
+							<div class="card-img"><img src="assets/img/competition.jpg" /></div>
+							<div class="card-topic">Winter Guard</div>
+							<div class="card-title">Soaring above the competition</div>
+							<div class="card-text">The performing arts at La Porte High School have been extraordinarily successful in recent decades, and the LPHS Winter Guard is no exception to this. Placing 24th in the world for their class, the guard members had an outstanding showing this year.</div>
+							<div class="card-link">
+								<a href="https://slicernewsroom.com/7038/events/soaring-above-the-competition/">
+									<div id="text">Read More</div>
+								</a>
+							</div>
+						</div>
+					</div>
+			
+					<!-- Card 03/03 -->
+					<div class="news-column">
+						<div class="news-card">
+			  
+							<div class="card-img"><img src="assets/img/spotlight.jpg" /></div>
+							<div class="card-topic">Spotlight</div>
+							<div class="card-title">Principal Spotlight: Mr. Tonagel</div>
+							<div class="card-text">The LPHS PR team sits down with Mr. Ben Tonagel, principal and graduate of La Porte High School.  Watch the interview and learn everything you ever wanted to know about one important man.</div>
+							<div class="card-link">
+								<a href="https://slicernewsroom.com/1961/video/principal-spotlight-mr-tonagel/">
+									<div id="text">Watch Now</div>
+								</a>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			</div>
+		</div>
+		
+		
+	<!-- Facts -->
+		<div class="facts">
+		  
+			<div class="facts-row">
+				<div id="header">Fast Facts</div>
+				<!-- Fact 01/02 -->
+				<div class="facts-column">
+					<div class="facts-container">
+						<div id="header">History</div>
+				
+						<div class="container-column">
+							<div id="icon"><i class="fas fa-user-graduate"></i></div>
+						</div>
+						<div class="container-column">
+							<div id="text">2019 marks the <span>150</span>th graduating class</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fact 02/02 -->
+				<div class="facts-column">
+					<div class="facts-container">
+						<div id="header">Statistics</div>
+				
+						<div class="container-column">
+							<div id="icon"><i class="fas fa-award"></i></div>
+						</div>
+						<div class="container-column">
+							<div id="text">Over <span>90%</span> graduation rate</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	<!-- Footer -->
+		<div class="footer-container">
+			<div class="footer">
+			
+				<div id="school"><a href="#">La Porte High School</a></div>
+				<div id="slogan"><a href="#">Learn Today / Excel Tomorrow</a></div>
+			  
+				<hr>
+			  
+				<div class="connect">
+					<div id="text">Connect with us:</div>
+					<div id="socials">
+						<a href="facebook.com"><i class="fab fa-facebook-square"></i></a>
+						<a href="twitter.com"><i class="fab fa-twitter-square"></i></a>
+						<a href="youtube.com"><i class="fab fa-youtube-square"></i></a>
+					</div>
+				</div>
+			  
+				<hr>
+			  
+				<div id="navigation">
+					<a href="#">Accessibility</a>
+					<a href="#">Contact Us</a>
+					<a href="#">Jobs</a>
+					<a href="#">Campus Safety</a>
+					<a href="#">MyLPHS</a>
+					<a href="#">Rules Docket</a>
+					<a href="#">Privacy</a>
+					<a href="#">Terms</a>
+				</div>
+			  
+				<div id="copyright"><i class="far fa-copyright"></i> 2019 La Porte High School | La Porte, IN</div>
+			</div>
+		</div>
+    
+		<!-- Script -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+		<script src="assets/jss/slideshow.js"></script>
+		<script src="assets/jss/hover.js"></script>
+
+	</div>
+	</body>
+</html>
