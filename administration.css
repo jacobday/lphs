@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*
+	Web Design
+	Prd 1 / Tobey
+	
+	La Porte High School -{ Administration Styling
+	Author:	Jacob Day
+	Date:	05/01/2019
+	
+	File Name:	administration.css
+*/
+
+.administration-container {
+	
+}
+
+.admin-row {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px;
+}
+
+.admin-column {
+	padding: 0 20px;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	white-space: nowrap;
+}
+
+#principal {
+	position: relative;
+	display: inline-block;
+	flex: 1;
+	padding: 20px;
+}
+#principal img {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
