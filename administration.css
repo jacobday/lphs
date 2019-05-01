@@ -17,10 +17,14 @@
 
 .admin-row {
 	text-align: center;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 20px 20px;
+}
+
+.admin-row #header {
+  font-size: 1.5em;
+  font-weight: 900;
 }
 
 .admin-column {
@@ -38,6 +42,7 @@
 	flex: 1;
 	padding: 20px;
 }
+
 #principal img {
 	border-radius: 50%;
 	height: 100%;
