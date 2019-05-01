@@ -190,6 +190,7 @@ a {
 	background-color: white;
 	list-style-type: none;
   width: 100%;
+  white-space: nowrap;
 }
 
 
