@@ -11,20 +11,65 @@
 	File Name:	styles.css
 */
 
+.open-sidenav {
+  font-size:2em;
+  cursor:pointer;
+  position: absolute;
+  top: 7px;
+  right: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: -3px 0 9px rgba(0,0,0,1);
+}
+
+.sidenav a {
+  padding: 8px 32px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-align: right;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: all .5s ease-in-out;
+}
 
 /* Basic Styling */
 
 html {
-	background-color: #a55c1b;
-background-image: linear-gradient(315deg, #a55c1b 0%, #000000 74%);}
+	background-color: #1f1f1f;
+}
 
 body {
 	font-family: "Open Sans", sans-serif;
 	font-size: 17px;
 	color: #3d3d3d;
-	
-  margin: 0;
-  padding: 0;
+	margin: 0;
 
 }
 
@@ -50,14 +95,13 @@ a {
 }
 
 .header-right a {
-	float: left;
 	color: white;
 	text-align: center;
-  vertical-align: middle;
 	font-size: 1em;
 	line-height: 25px;
 	border-radius: 4px;
 	transition: color 0.2s ease-in-out;
+	display: table-cell;
 }
 
 .header-right a:after {
@@ -85,7 +129,10 @@ a {
 }
 
 .header-right {
-	float: right;
+	display: flex;
+	justify-content: flex-end;
+	margin-left: -7%;
+	width: 100%;
 }
 
 .header-left img {
@@ -347,28 +394,47 @@ li.dropdown {
 
 .news {
   background-color: rgba(33,33,33,0.8);
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding: 20px 0;
 }
 
-.news-row #header {
+.news #header {
   color: white;
   text-align: center;
-  padding-bottom: 10px;
   font-size: 1.3em;
+  position: relative;
+}
+
+.news #header:before, .news #header:after {
+  content: "";
+  height: 1px;
+  width: 330px;
+  bottom: 13px;
+  display: block;
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.news #header:before {
+  left: 240px;
+}
+
+.news #header:after {
+  right: 240px;
 }
 
 .news-column {
-  width: 30%;
-  padding: 0 10px;
+  padding: 0 20px;
   overflow: hidden;
   display: inline-block;
-  min-height: 500px;
+  flex: 1;
 }
 
 .news-row {
-  margin: (0, -5px);
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
 }
 
 .news-row:after {
@@ -379,31 +445,35 @@ li.dropdown {
 
 .news-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 30px;
   text-align: left;
   background-color: #f1f1f1;
-  min-height: 515px;
+  height: 550px;
+  position: relative;
 }
 
 
 /* Card Styling */
 
 .card-img {
-  width: 100%;
-  height: 225px;
+  width: calc(100% + 60px);
+  height: 250px;
   overflow: hidden;
+  text-align: center;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .card-img > img {
   height: 100%;
-  width: auto;
+  width: 100%;
 }
 
 .card-topic {
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 700;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 5px;
   color: #FF6600;
 }
@@ -422,8 +492,11 @@ li.dropdown {
 }
 
 .card-link {
-  padding: 16px 0;
+  padding: 40px 20px;
   display: table;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .card-link #text {
