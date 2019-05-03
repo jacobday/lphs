@@ -14,6 +14,7 @@
 .administration-container {
   background: url('../img/citygame.jpg') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .administration {
