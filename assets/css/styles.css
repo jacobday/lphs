@@ -15,6 +15,10 @@
   animation-play-state: paused !important;
 }
 
+.js-loading .preloader {
+  display: flex;
+}
+
 .open-sidenav {
   font-size:2em;
   cursor:pointer;
