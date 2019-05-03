@@ -43,8 +43,20 @@
   text-align: right;
 }
 
+.sidenav a img {
+  width: 100%;
+  margin: 100px 0;
+  opacity: 0.04;
+  transition: 0.2s ease-in-out;
+}
+
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.sidenav a img:hover {
+  opacity: 0.1;
+  transform: scale(1.05);
 }
 
 .sidenav .closebtn {
