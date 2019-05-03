@@ -11,6 +11,10 @@
 	File Name:	styles.css
 */
 
+.js-loading *, .js-loading *:before, .js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 .open-sidenav {
   font-size:2em;
   cursor:pointer;
