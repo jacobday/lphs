@@ -15,10 +15,6 @@
   animation-play-state: paused !important;
 }
 
-.js-loading .preloader {
-  display: flex;
-}
-
 .open-sidenav {
   font-size:2em;
   cursor:pointer;
@@ -138,6 +134,10 @@ body {
       50%{background-position: 100% 50%}
       100%{background-position: 0% 50%}
    }
+
+.js-loading .preloader {
+  display: flex;
+}
 
 /* Element Styling */
 
