@@ -1,10 +1,16 @@
 $(function() {
-  $('#a').hover(function() {
+  $('#lp-logo').hover(function() {
     $('.topnav').css('box-shadow', '0 4px 8px rgba(255,102,0,1)');
   }, function() {
     $('.topnav').css('box-shadow', '');
   });
 });
+
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
+
 
 $(function() {
   $('.btonagel').hover(function() {
