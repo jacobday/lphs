@@ -278,12 +278,14 @@ body {
 	color: #3d3d3d;
 	margin: 0;
 	height: 100%;
+	scroll-snap-type: mandatory;
 	scroll-snap-type: y mandatory;
 }
 
 .scrollsnap {
 	height: 100vh;
 	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 
@@ -725,20 +727,26 @@ li.dropdown:last-child div {
   align-content: center;
 }
 
+.news-header-container {
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
 .news #header {
+	height: 100%;
+	width: 100%;
   color: white;
   text-align: center;
   font-size: 1.3em;
   position: relative;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   white-space: nowrap;
 }
 
 .news #header:before, .news #header:after {
   content: "";
+  position: absolute;
   height: 1px;
   width: 330px;
   display: block;
@@ -754,7 +762,7 @@ li.dropdown:last-child div {
 }
 
 .news-column {
-  padding: 0 20px;
+  padding: 25px;
   overflow: hidden;
   display: inline-block;
   flex: 1;
@@ -765,8 +773,7 @@ li.dropdown:last-child div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px;
-  height: 100%;
+  height: 90%;
 }
 
 .news-row:after {
