@@ -278,6 +278,12 @@ body {
 	color: #3d3d3d;
 	margin: 0;
 	height: 100%;
+	scroll-snap-type: y mandatory;
+}
+
+.scrollsnap {
+	height: 100vh;
+	scroll-snap-align: start;
 }
 
 
@@ -297,7 +303,7 @@ a {
 .header {
 	background-color: #1F1F1F;
 	overflow: hidden;
-	height: 90px;
+	height: 10vh;
 	display: flex;
 	align-items: center;
 }
@@ -417,7 +423,7 @@ a {
 
 /* Top Navigation Styling */
 .topnav {
-  height: 70px;
+  height: 9vh;
   width: 100%;
   position: relative;
   box-shadow: 0 1px 3px rgba(34,25,25,1);
@@ -495,7 +501,7 @@ li.dropdown:last-child div {
 /* Recent Updates Slideshow */
 .slideshow-container {
   width: 100%;
-  height: 540px;
+  height: 66vh;
   position: relative;
   margin: auto;
   background-color: white;
@@ -627,13 +633,18 @@ li.dropdown:last-child div {
   background: url(../img/parallax.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+  height: 15vh;
 }
 
 .navbar {
-  text-align: center;
   white-space: nowrap;
-  height: 150px;
+  height: 100%;
+  width: 100%;
+  position: relative;
   background-color: rgba(208,208,208,0.96);
+  display: flex;
+  justify-content: center;
 }
 
 .navbar ul {
@@ -642,12 +653,12 @@ li.dropdown:last-child div {
 	overflow: hidden;
 	background-color: white;
 	list-style-type: none;
-	position: relative;
-	height: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 122%;
 	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -20px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -701,11 +712,17 @@ li.dropdown:last-child div {
   background: url(../img/parallax.jpg) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
 }
 
 .news {
   background-color: rgba(33,33,33,0.8);
   padding: 20px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .news #header {
@@ -713,15 +730,18 @@ li.dropdown:last-child div {
   text-align: center;
   font-size: 1.3em;
   position: relative;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  white-space: nowrap;
 }
 
 .news #header:before, .news #header:after {
   content: "";
   height: 1px;
   width: 330px;
-  bottom: 13px;
   display: block;
-  position: absolute;
   background-color: rgba(255,255,255,0.2);
 }
 
@@ -746,6 +766,7 @@ li.dropdown:last-child div {
   justify-content: center;
   align-items: center;
   padding: 20px 20px;
+  height: 100%;
 }
 
 .news-row:after {
@@ -840,6 +861,8 @@ li.dropdown:last-child div {
 
 .facts {
   background-color: black;
+  height: 25vh;
+  position: relative;
 }
 
 .facts-row > #header {
@@ -861,8 +884,10 @@ li.dropdown:last-child div {
 }
 
 .facts-row {
-  margin: (0, -5px);
+  height: 100%;
+  width: 100%;
   background-color: white;
+  position: absolute;
 }
 
 .facts-row:after {
@@ -909,11 +934,13 @@ li.dropdown:last-child div {
 .footer-container {
   background: url(../img/footer.jpeg) no-repeat center;
   background-size: cover;
-  height: 500px;
+  height: 75vh;
+  position: relative;
 }
 
 .footer {
   height: 100%;
+  width: 100%;
 		color: white;
 	font-size: 1em;
 	text-align: center;
