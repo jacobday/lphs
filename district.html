@@ -11,106 +11,134 @@
 		-->
 <html>
 	<head>
-		<title>La Porte High School</title>
+		<title>LPCSC District</title>
 		<meta charset="utf-8" />
 		<link href="assets/css/styles.css" rel="stylesheet" />
-		<link href="assets/css/administration.css" rel="stylesheet" />
+		<link href="assets/css/district.css" rel="stylesheet" />
 		<link href="assets/css/layout.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Dancing+Script" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	
 	<body>
-	<div class="preloader"><div id="img"><img src="assets/img/lphsload.png" /></div><div class="single13"></div></div>
-	<script src="assets/js/preloader.js"></script>
-
-	
-	<div class="sidenav" id="sidenav">
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="index.html">Home</a>
-					<a href="district.html">District</a>
-					<a href="administration.html">Administration</a>
-					<a href="https://jacobday.github.io/" target="_blank"><img src="assets/img/JacobDaySignature.png" /></a>
-	</div>
-	<div id="main">
-
-	<!-- Header -->
-		<div class="header">
-			<div class="header-left">
-				<img id="a" src="assets/img/lphs-logo.png" />
-				<div id="school"><a href="index.html">La Porte High School</a></div>
-			</div>
-
-			<div class="header-right">
-				<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/students/');">Students</a>
-				<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/parents/');">Parents</a>
-				<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/staff/');">Faculty & Staff</a>
-			</div>
-			<span class="open-sidenav" onclick="openNav()">&#9776;</span>
+	<!-- Loading Screen -->
+		<div class="preloader">
+			<div class="load-img pulse"><img src="assets/img/lphsload.png" /></div>
+			<div class="load-text pulse-opacity">Loading</div>
+			<div class="spinner"></div>
 		</div>
+		<script src="assets/js/preloader.js"></script>
+
+	<!-- Side Navigation -->
+		<div class="sidenav" id="sidenav">
+			<div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+			<a href="index.html" id="link">Home</a>
+			<a href="district.html" id="link">District</a>
+			<a href="administration.html" id="link">Administration</a>
+			<a href="https://slicernewsroom.com/" target="_blank" onclick="closeNav()" id="link">Slicer Newsroom</a>
+			<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/mentoring/');" id="link">Slicer Champions</a>
+			<a href="https://goslicers.com/" target="_blank" onclick="closeNav()" id="link">Slicer Athletics</a>
+			<a href="https://hireaslicer.com/" target="_blank" onclick="closeNav()" id="link">Hire A Slicer</a>
+			<a id="signature" href="https://jacobday.github.io/" target="_blank"><img src="assets/img/JacobDaySignature.png" /></a>				
+		</div>
+		
+	<!-- Website Container -->
+		<div id="main">
+
+			<div class="scrollsnap">
+			<!-- Header -->
+				<div class="header">
+					<!-- Header_Left -->
+					<div class="header-left">
+						<div id="image">
+							<a href="#top"><img id="lp-logo" src="assets/img/lphs-logo.png"/></a>
+						</div>
+						<div id="school">
+							<a href="index.html">La Porte High School</a>
+						</div>
+					</div>
+					<!-- Header_Right -->
+					<div class="header-right">
+						<div id="links">
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/students/');">Students</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/parents/');">Parents</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/staff/');">Faculty & Staff</a>
+						</div>
+						<div id="button">
+							<span class="open-sidenav" onclick="openNav()">&#9776;</span>
+						</div>
+					</div>
+				</div>
 		
 		
 	<!-- Top Navigation -->
-		<div class="topnav" id="b">
-			<ul>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/districtinfo.asp');">District Info</a>
-					<div class="drop-content">
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/projects/');">Projects</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/administration.asp');">Administration</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/community.asp');">Community</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/schools.asp');">Schools</a>
-					<div class="drop-content">
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/boston/');">Boston</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/kesling/');">Kesling</a>
-						<a href="index.html">La Porte High School</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('"http://www.lpcsc.k12.in.us/departments.asp');">Departments</a>
-					<div class="drop-content">
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/foodservice/');">Food Service</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/technology/');">Technology</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/transportation/');">Transportation</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/elearning/');">eLearning</a>
-					<div class="drop-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('#');">Athletics</a>
-					<div class="drop-content">
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/kesling/athletics/');">Kesling</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://goslicers.com/');">La Porte High School</a>
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/media/');">Live Stream</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/calendars.asp');">Calendar</a>
-					<div class="drop-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</li>
-				<li class="dropdown">
-					<a href="https://www.paypal.me/jacobmday" target="_blank" class="dropbtn">Give</a>
-					<div class="drop-content">
-						<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/lpedf/');">LP Educational Foundation</a>
-						<a href="https://www.paypal.me/jacobmday" target="_blank">Jacob Day</a>
-					</div>
-				</li>
-			</ul>
-		</div>
+			<div class="topnav">
+				<ul>
+					<!-- District -->
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/districtinfo.asp');">District Info</a>
+						<div class="drop-content">
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/projects/');">Projects</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/administration.asp');">Administration</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/community.asp');">Community</a>
+						</div>
+					</li>
+					<!-- Schools -->
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/schools.asp');">Schools</a>
+						<div class="drop-content">
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/boston/');">Boston</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/kesling/');">Kesling</a>
+							<a href="index.html">La Porte High School</a>
+						</div>
+					</li>
+					<!-- Departments -->
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('"http://www.lpcsc.k12.in.us/departments.asp');">Departments</a>
+						<div class="drop-content">
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/foodservice/');">Food Service</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/technology/');">Technology</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/transportation/');">Transportation</a>
+						</div>
+					</li>
+					<!-- eLearning -->
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/elearning/');">eLearning</a>
+						<div class="drop-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<!-- Athletics -->
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Athletics</a>
+						<div class="drop-content">
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/kesling/athletics/');">Kesling</a>
+							<a href="https://goslicers.com/" target="_blank">La Porte High School</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/media/');">Live Stream</a>
+						</div>
+					</li>
+					<!-- Calendar -->
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/calendars.asp');">Calendar</a>
+						<div class="drop-content">
+							<a href="#">Link 1</a>
+							<a href="#">Link 2</a>
+							<a href="#">Link 3</a>
+						</div>
+					</li>
+					<!-- Give -->
+					<li class="dropdown">
+						<a href="https://www.paypal.me/jacobmday" target="_blank" class="dropbtn">Give</a>
+						<div class="drop-content">
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/lpedf/');">LP Educational Foundation</a>
+							<a href="https://www.paypal.me/jacobmday" target="_blank">Jacob Day</a>
+						</div>
+					</li>
+				</ul>
+			</div>
 
 
 <!-- District -->
@@ -147,37 +175,43 @@
 
 		
 	<!-- Footer -->
-		<div class="footer-container">
-			<div class="footer">
-			
-				<div id="school"><a href="index.html">La Porte High School</a></div>
-				<div id="slogan"><a href="javascript:void(0)">Learn Today / Excel Tomorrow</a></div>
-			  
-				<hr>
-			  
-				<div class="connect">
-					<div id="text">Connect with us:</div>
-					<div id="socials">
-						<a href="https://www.facebook.com/LPCSC.LPHS/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-						<a href="https://twitter.com/slicerslphs" target="_blank"><i class="fab fa-twitter-square"></i></a>
-						<a href="https://www.youtube.com/channel/UChEFNQTcZysE3Qc9mWNKQ6A/feed" target="_blank"><i class="fab fa-youtube-square"></i></a>
+			<div class="footer-container">
+				<div class="footer">
+					<!-- Footer_Top -->
+					<div class="footer-top">
+						<div id="school"><a href="index.html">La Porte High School</a></div>
+						<div id="slogan"><a href="javascript:void(0)">Learn Today / Excel Tomorrow</a></div>
+					</div>
+					<hr>
+					<!-- Footer_Center -->
+					<div class="footer-center">
+						<div class="connect">
+							<div id="text">Connect with us:</div>
+							<div id="socials">
+								<a href="https://www.facebook.com/LPCSC.LPHS/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+								<a href="https://twitter.com/slicerslphs" target="_blank"><i class="fab fa-twitter-square"></i></a>
+								<a href="https://www.youtube.com/channel/UChEFNQTcZysE3Qc9mWNKQ6A/feed" target="_blank"><i class="fab fa-youtube-square"></i></a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<!-- Footer_Bottom -->
+					<div class="footer-bottom">
+						<!-- Footer Navigation -->
+						<div id="navigation">
+							<a href="index.html">Home</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/districtinfo.asp');">District Info</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/contact.asp?id=3911');">Contact Us</a>
+							<a href="https://skyward01.lpcsc.k12.in.us/scripts/wsisa.dll/WService=wsFin/rapplmnu03.w" target="_blank">Jobs</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.neola.com/laporte-in/');">Rules</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/docs/upload/Anti-Harassment%20Policy_1.pdf');">Campus Safety</a>
+							<a href="https://skyward01.lpcsc.k12.in.us/scripts/wsisa.dll/WService=wsEAplus/seplog01.w" target="_blank">SlicerConnect</a>
+							<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://my.textcaster.com/asa/Default.aspx?ID=0ad1137b-5317-4867-bd1f-2e4b9d7a2891');">LPCSC@lert</a>
+						</div>
+						<!-- Copyright -->
+						<div id="copyright"><i class="far fa-copyright"></i> 2019 La Porte High School | La Porte, IN</div>
 					</div>
 				</div>
-			  
-				<hr>
-			  
-				<div id="navigation">
-					<a href="index.html">Home</a>
-					<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.lpcsc.k12.in.us/districtinfo.asp');">District Info</a>
-					<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/contact.asp?id=3911');">Contact Us</a>
-					<a href="https://skyward01.lpcsc.k12.in.us/scripts/wsisa.dll/WService=wsFin/rapplmnu03.w" target="_blank">Jobs</a>
-					<a href="javascript:void(0)" onclick="javascript:slicerPortal('http://www.neola.com/laporte-in/');">Rules</a>
-					<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://www.lpcsc.k12.in.us/docs/upload/Anti-Harassment%20Policy_1.pdf');">Campus Safety</a>
-					<a href="https://skyward01.lpcsc.k12.in.us/scripts/wsisa.dll/WService=wsEAplus/seplog01.w" target="_blank">SlicerConnect</a>
-					<a href="javascript:void(0)" onclick="javascript:slicerPortal('https://my.textcaster.com/asa/Default.aspx?ID=0ad1137b-5317-4867-bd1f-2e4b9d7a2891');">LPCSC@lert</a>
-				</div>
-			  
-				<div id="copyright"><i class="far fa-copyright"></i> 2019 La Porte High School | La Porte, IN</div>
 			</div>
 		</div>
     
