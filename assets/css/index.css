@@ -100,7 +100,7 @@
   font-weight: 900;
 }
 
-.dot-container {
+.bar-container {
   text-align: center;
   margin: 0;
   height: 10px;
@@ -109,7 +109,7 @@
   right: 3px;
 }
 
-.dot {
+.bar {
   height: 4px;
   width: 55px;
   margin: 0 2px;
