@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*
+	Web Design
+	Prd 1 / Tobey
+	
+	La Porte High School -{ District Styling
+	Author:	Jacob Day
+	Date:	05/01/2019
+	
+	File Name:	district.css
+*/
+
+.administration-container {
+  background: url('../img/citygame.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.administration {
+  background-color: rgba(31,31,31,0.8);
+  padding: 20px 0;
+}
+
+.admin-row {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 20px;
+	height: 500px;
+}
+
+.administration #header {
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.administration #header:before, .administration #header:after {
+  content: "";
+  height: 1px;
+  width: 330px;
+  bottom: 13px;
+  display: block;
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.administration #header:before {
+  left: 240px;
+}
+
+.administration #header:after {
+  right: 240px;
+}
+
+.admin-column {
+	padding: 0 20px;
+	overflow: hidden;
+	justify-content: space-between;
+	align-items: center;
+	white-space: nowrap;
+	height: 100%;
+}
+
+.admin-column #principal {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+}
+
+#thumbnail {
+	border-radius: 50%;
+	height: 160px;
+	width: 160px;
+	transition: all 0.1s ease-in-out;
+}
+
+.profile-card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: #1f1f1f;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	height: 412px;
+	width: 208px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -25%);
+	transition: all 0.2s ease-in-out;
+	overflow: hidden;
+        white-space: nowrap;
+	border-radius: 1%;
+}
+
+.profile-card p {
+  margin: 0;
+}
+
+.profile-card img {
+  height: 208px;
+}
+
+.profile-card #name {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 5px;
+  margin: 0;
+}
+
+.profile-card #title {
+  color: grey;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.profile-card #education {
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+.profile-card #social a {
+  color: grey;
+  padding: 0 4px;
+  transition: color 0.2s ease-in-out;
+}
+
+.profile-card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  margin: 0;
+  transition: color 0.2s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.profile-card button:hover, .profile-card #social a:hover {
+  color: #FF6600;
+}
