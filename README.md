@@ -1,3 +1,3 @@
 # La Porte High School
-Homepage Redesign
+Webpage Redesign
 http://www.lpcsc.k12.in.us/
