@@ -517,7 +517,7 @@ li.dropdown:last-child div {
 }
 
 .recent-slides img {
-  min-width: 100%;
+  width: 100%;
 }
 
 .text {
