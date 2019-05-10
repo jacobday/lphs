@@ -4,7 +4,7 @@ showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("recent-slides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("bar");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
