@@ -100,12 +100,12 @@ a {
   animation: spin 2s linear infinite;
 }
 
-
-	/* Preloader Screen:Pseudo */
+/*
+	 Preloader Screen:Pseudo 
 .js-loading *, .js-loading *:before, .js-loading *:after {
   animation-play-state: paused !important;
 }
-
+*/
 
 	/* Preloader Screen Animations */
 .pulse {
