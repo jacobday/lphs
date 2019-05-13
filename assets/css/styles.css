@@ -300,7 +300,6 @@ a {
 /* Header */
 .header {
 	background-color: #1F1F1F;
-	overflow: hidden;
 	height: 10vh;
 	display: flex;
 	align-items: center;
@@ -317,11 +316,14 @@ a {
 }
 
 .header-left #image {
-  height: 100%;
-  width: 25%;
+  height: 115%;
+  width: 17%;
+  margin-top: 5%;
+  margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .header-left #image a {
@@ -340,7 +342,7 @@ a {
 
 .header-left #school {
   height: 100%;
-  width: 60%;
+  width: 83%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,20 +518,27 @@ li.dropdown:last-child div {
   border-top-color: #FF6600;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 
 }
 
 .footer-top {
-	
+	width: 100%;
+	position: absolute;
+	top: 3%;
 }
 
 .footer-center {
-	
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .footer-bottom {
-	
+	width: 100%;
+	position: absolute;
+	bottom: 1%;
 }
 
 .footer #school {
@@ -563,21 +572,19 @@ li.dropdown:last-child div {
 }
 
 hr {
-  margin: 10px 43%;
+  width: 11%;
   border-style: inset;
   border-width: 0.5px;
 }
 
-.connect {
-  padding: 10px 0;
-}
-
 .connect #text {
+  font-weight: 100;
   padding: 10px 0;
 }
 
 .connect #socials {
   padding: 10px 0;
+  letter-spacing: 5px;
 }
 
 .connect #socials a {
