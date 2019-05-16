@@ -403,7 +403,7 @@
 /* R */
 .resources-container {
 	background-color: white;
-	height: 25vh;
+	height: 35vh;
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -422,11 +422,39 @@
 }
 
 .resources-container div a {
+	height: 100%;
+	width: 100%;
 	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.resources-container div:hover {
+.resource #overlay {
+	width: 50%;
+	opacity: 0;
+	text-align: center;
+	font-size: 0.4em;
+	font-weight: 600;
+	position: absolute;
+	transition: 0.2s ease-in-out;
+}
+
+.resource i {
+	opacity: 1;
+	transition: 0.2s ease-in-out;
+}
+
+.resource:hover {
 	background-color: #d0d0d0;
+}
+
+.resource:hover #overlay {
+	opacity: 1;
+}
+
+.resource:hover i {
+	opacity: 0.3;
 }
 
 

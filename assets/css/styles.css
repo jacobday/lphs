@@ -501,7 +501,7 @@ li.dropdown:last-child div {
 .footer-container {
   background: url(../img/footer.jpeg) no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 65vh;
   position: relative;
 }
 
