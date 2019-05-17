@@ -525,7 +525,7 @@ li.dropdown:last-child div {
 .footer-top {
 	width: 100%;
 	position: absolute;
-	top: 3%;
+	top: 8%;
 }
 
 .footer-center {
@@ -575,6 +575,7 @@ hr {
   width: 11%;
   border-style: inset;
   border-width: 0.5px;
+  opacity: 0.3;
 }
 
 .connect #text {

@@ -402,7 +402,9 @@
 
 /* R */
 .resources-container {
-	background-color: white;
+	background: url(../img/parallax.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 	height: 35vh;
 	position: relative;
 	display: flex;
@@ -426,35 +428,42 @@
 	width: 100%;
 	color: black;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
+.resource {
+	background-color: rgba(208,208,208, 0.96);
+}
+
 .resource #overlay {
-	width: 50%;
-	opacity: 0;
-	text-align: center;
+	width: 100%;
+	opacity: 0.8;
 	font-size: 0.4em;
-	font-weight: 600;
-	position: absolute;
-	transition: 0.2s ease-in-out;
+	font-weight: 200;
+	display: flex;
+	justify-content: center;
+	transition: all 0.2s ease-in-out;
 }
 
 .resource i {
+	height: 100%;
+	width: 100%;
 	opacity: 1;
-	transition: 0.2s ease-in-out;
-}
-
-.resource:hover {
-	background-color: #d0d0d0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	transition: all 0.2s ease-in-out;
 }
 
 .resource:hover #overlay {
 	opacity: 1;
+	font-weight: 600;
 }
 
 .resource:hover i {
-	opacity: 0.3;
+	opacity: 0.6;
 }
 
 
