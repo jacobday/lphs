@@ -1,6 +1,6 @@
 function openNav() {
-  document.getElementById("sidenav").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
+  document.getElementById("sidenav").style.width = "21vw";
+  document.getElementById("main").style.marginRight = "21vw";
   document.getElementById("main").style.filter = "blur(3px)";
   $('body').addClass('stop-scrolling')
 }
