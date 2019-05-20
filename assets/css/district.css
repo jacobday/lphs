@@ -11,18 +11,18 @@
 	File Name:	district.css
 */
 
-.administration-container {
-  background: url('../img/citygame.jpg') no-repeat center;
+.district-container {
+  background: url('../img/district.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.administration {
+.district {
   background-color: rgba(31,31,31,0.8);
   padding: 20px 0;
 }
 
-.admin-row {
+.district-row {
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -30,14 +30,14 @@
 	height: 500px;
 }
 
-.administration #header {
+.district #header {
   font-size: 1.3em;
   text-align: center;
   color: white;
   position: relative;
 }
 
-.administration #header:before, .administration #header:after {
+.district #header:before, .district #header:after {
   content: "";
   height: 1px;
   width: 330px;
@@ -47,24 +47,24 @@
   background-color: rgba(255,255,255,0.2);
 }
 
-.administration #header:before {
-  left: 240px;
+.district #header:before {
+  left: 200px;
 }
 
-.administration #header:after {
-  right: 240px;
+.district #header:after {
+  right: 200px;
 }
 
-.admin-column {
+.district-column {
 	padding: 0 20px;
-	overflow: hidden;
+	overflow-x: auto;
 	justify-content: space-between;
 	align-items: center;
 	white-space: nowrap;
 	height: 100%;
 }
 
-.admin-column #principal {
+.district-column #school {
 	position: relative;
 	display: inline-block;
 	padding: 20px;
@@ -90,7 +90,7 @@
 	transform: translate(-50%, -25%);
 	transition: all 0.2s ease-in-out;
 	overflow: hidden;
-        white-space: nowrap;
+    white-space: nowrap;
 	border-radius: 1%;
 }
 
