@@ -385,6 +385,7 @@
   transition: all 0.2s ease;
 }
 
+/*
 .card-link #text:before {
   content: "";
   top: 0;
@@ -395,7 +396,7 @@
   width: 43px;
   right: -43px;
 }
-
+*/
 .card-link #text:hover {
   background-color: gray;
 }
